@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Müzik Çalar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎧 Müzik Çalar</h1>
+
+        <section class="muzik-ekle">
+            <form>
+                <input type="text" name="muzik_adi" placeholder="Müzik Adı" required>
+                <input type="text" name="sanatci" placeholder="Sanatçı" required>
+                <input type="file" name="dosya" accept=".mp3" class="file-btn" required>
+                <button type="submit">🎶 Ekle</button>
+            </form>
+        </section>
+
+        <section class="muzik-listesi">
+            
+        </section>
+    </div>
+</body>
+</html>

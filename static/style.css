@@ -1,0 +1,169 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #6a0dad, #007bff);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.muzik-ekle form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+form input, form button {
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #6a0dad;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #570ea8;
+}
+
+.muzik-listesi {
+    margin-top: 50px;
+}
+
+.player-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.track-info h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.track-info p {
+    margin: 4px 0;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+audio {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-btn, .delete-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.play-btn {
+    background-color: #6a0dad;
+    color: white;
+}
+
+.play-btn:hover {
+    background-color: #570ea8;
+}
+
+.delete-btn {
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    background-color: #b71c1c;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #570ea8;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #2e2e4d;
+    border-radius: 12px;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #6a0dad;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #ccc;
+    border-radius: 10px;
+}
