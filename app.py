@@ -71,4 +71,4 @@ def muzik_oynat(id):
 
 # Uygulamayı çalıştıracak ana kod.
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)   # Debug modu açık, böylece hataları kolayca görebiliriz.
+    app.run(host='0.0.0.0', port=5000)   # Debug modu açık, böylece hataları kolayca görebiliriz.
